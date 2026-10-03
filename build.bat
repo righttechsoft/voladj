@@ -8,4 +8,4 @@ if not exist %VC% (
 call %VC% >nul
 :build
 cd /d "%~dp0"
-cl /nologo /O1 /GS- voladj.c /link /SUBSYSTEM:WINDOWS /NODEFAULTLIB /ENTRY:entry kernel32.lib user32.lib ole32.lib
+cl /nologo /O1 /GS- voladj.c /link /SUBSYSTEM:WINDOWS /NODEFAULTLIB /ENTRY:entry kernel32.lib user32.lib ole32.lib gdi32.lib advapi32.lib
